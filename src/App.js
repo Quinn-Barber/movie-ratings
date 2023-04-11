@@ -2,7 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 
 const data = [
-  { name: "Movie Name", scorer: "Quinn", genre: "Horror, Romance", plot: 5.6, acting: 8.9, cinematography: 1.1, soundtrack: 5.3, editing: 2.5, production: 5, directing: 7, writing: 9, isAnimation: false, isStopMotion: false }
+  { name: "The Super Mario Bros. Movie", scorer: "Quinn", genre: "Adventure, Comedy", plot: 6.5, acting: 9, cinematography: 7, soundtrack: 8.5, editing: 9, production: 10, directing: 7, writing: 6.5, isAnimation: true, isStopMotion: false },
+  { name: "The Super Mario Bros. Movie", scorer: "Jack", genre: "Adventure, Comedy", plot: 5.8, acting: 9, cinematography: 8.2, soundtrack: 6.2, editing: 7.8, production: 8.3, directing: 7.1, writing: 6.1, isAnimation: true, isStopMotion: false }
 ]
 
 function App() {
@@ -20,8 +21,26 @@ function App() {
     let stopmotion = dataset["isAnimation"];
 
     if(animation || stopmotion){
-      acting = 10;
+      switch(genre){
+        case "Thriller":
+          return ((plot*10) + (acting*9) + (cinematography*9) + (soundtrack*10) + (editing*9) + (production*9) + (directing*10) + (writing*10))/760*100;
+        case "Horror":
+          return ((plot*8) + (acting*9) + (cinematography*9) + (soundtrack*10) + (editing*8) + (production*9) + (directing*9) + (writing*7))/690*100;
+        case "Drama":
+          return ((plot*10) + (acting*9) + (cinematography*8) + (soundtrack*8) + (editing*7) + (production*7) + (directing*9) + (writing*10))/680*100;
+        case "Action":
+          return ((plot*7) + (acting*9) + (cinematography*9) + (soundtrack*9) + (editing*9) + (production*8) + (directing*8) + (writing*6))/650*100;
+        case "Comedy":
+          return ((plot*6) + (acting*9) + (cinematography*5) + (soundtrack*6) + (editing*6) + (production*6) + (directing*7) + (writing*10))/550*100;
+        case "Romance":
+          return ((plot*9) + (acting*9) + (cinematography*7) + (soundtrack*7) + (editing*7) + (production*7) + (directing*8) + (writing*9))/630*100;
+        case "Adventure":
+          return ((plot*7) + (acting*9) + (cinematography*9) + (soundtrack*9) + (editing*9) + (production*8) + (directing*8) + (writing*6))/690*100;
+        default:
+          return ((plot*10) + (acting*9) + (cinematography*10) + (soundtrack*10) + (editing*10) + (production*10) + (directing*10) + (writing*10))/790*100;
+      }
     }
+
     switch(genre){
       case "Thriller":
         return ((plot*10) + (acting*9) + (cinematography*9) + (soundtrack*10) + (editing*9) + (production*9) + (directing*10) + (writing*10))/760*100;
@@ -35,6 +54,8 @@ function App() {
         return ((plot*6) + (acting*8) + (cinematography*5) + (soundtrack*6) + (editing*6) + (production*6) + (directing*7) + (writing*10))/540*100;
       case "Romance":
         return ((plot*9) + (acting*9) + (cinematography*7) + (soundtrack*7) + (editing*7) + (production*7) + (directing*8) + (writing*9))/630*100;
+      case "Adventure":
+        return ((plot*9) + (acting*9) + (cinematography*10) + (soundtrack*10) + (editing*7) + (production*8) + (directing*7) + (writing*9))/690*100;
       default:
         return ((plot*10) + (acting*10) + (cinematography*10) + (soundtrack*10) + (editing*10) + (production*10) + (directing*10) + (writing*10))/800*100;
     }

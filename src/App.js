@@ -6,7 +6,11 @@ const data = [
   { name: "The Super Mario Bros. Movie", scorer: "Jack", genre: "Adventure, Comedy", plot: 5.8, acting: 9, cinematography: 8.2, soundtrack: 6.2, editing: 7.8, production: 8.3, directing: 7.1, writing: 6.1, isAnimation: true, isStopMotion: false },
   { name: "The Super Mario Bros. Movie", scorer: "Justin", genre: "Adventure, Comedy", plot: 4.2, acting: 7.8, cinematography: 9.4, soundtrack: 8.7, editing: 7.5, production: 7.8, directing: 6.1, writing: 4.9, isAnimation: true, isStopMotion: false },
   { name: "Crazy, Stupid, Love", scorer: "Quinn", genre: "Romance, Comedy", plot: 7.5, acting: 8, cinematography: 6.5, soundtrack: 5, editing: 7, production: 6.3, directing: 8.3, writing: 8.4, isAnimation: false, isStopMotion: false},
-  { name: "Crazy, Stupid, Love", scorer: "Veronica", genre: "Romance, Comedy", plot: 8, acting: 8.2, cinematography: 7.5, soundtrack: 6, editing: 7.5, production: 7.5, directing: 7.8, writing: 7.5, isAnimation: false, isStopMotion: false}
+  { name: "Crazy, Stupid, Love", scorer: "Veronica", genre: "Romance, Comedy", plot: 8, acting: 8.2, cinematography: 7.5, soundtrack: 6, editing: 7.5, production: 7.5, directing: 7.8, writing: 7.5, isAnimation: false, isStopMotion: false},
+  { name: "Dungeons & Dragons: Honor Among Thieves", scorer: "Quinn", genre: "Action, Adventure", plot: 9.4, acting: 7, cinematography: 9.5, soundtrack: 7, editing: 6.4, production: 9.4, directing: 7, writing: 9.6, isAnimation: false, isStopMotion: false},
+  { name: "Dungeons & Dragons: Honor Among Thieves", scorer: "Jack", genre: "Action, Adventure", plot: 9, acting: 8.9, cinematography: 10, soundtrack: 6, editing: 7.6, production: 9, directing: 8, writing: 9, isAnimation: false, isStopMotion: false},
+  { name: "Guardians of the Galaxy Vol. 3", scorer: "Quinn", genre: "Action, Comedy, Thriller, Adventure", plot: 4.3, acting: 7, cinematography: 4.4, soundtrack: 9, editing: 7, production: 3, directing: 6, writing: 7, isAnimation: false, isStopMotion: false},
+  { name: "Guardians of the Galaxy Vol. 3", scorer: "Veronica", genre: "Action, Comedy, Thriller, Adventure", plot: 5.2, acting: 8.2, cinematography: 8.3, soundtrack: 9, editing: 6, production: 6, directing: 4, writing: 6, isAnimation: false, isStopMotion: false}  
 ]
 
 function App() {
